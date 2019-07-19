@@ -46,10 +46,8 @@ public class PropertiesReader implements ParametersGetterStrategy {
 			prop.load(inputFileStream);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-			throw new RuntimeException("Properties file not found");
 		} catch (IOException e) {
 			e.printStackTrace();
-			throw new RuntimeException("IOException occured");
 		}
 	}
 	

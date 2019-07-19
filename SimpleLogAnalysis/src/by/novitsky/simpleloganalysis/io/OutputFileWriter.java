@@ -26,7 +26,6 @@ public class OutputFileWriter {
 			outputFile.createNewFile();
 		} catch (IOException e1) {
 			e1.printStackTrace();
-			throw new RuntimeException("IOException occured");
 		}
 		try (FileWriter writer = new FileWriter(outputFile)){
 			for(LogLineObject line : inputList) {
@@ -34,7 +33,6 @@ public class OutputFileWriter {
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
-			throw new RuntimeException("IOException occured");
 		}
 	}
 	

@@ -37,7 +37,6 @@ public class LogDirectoryParser {
 			executor.awaitTermination(MULTITHREADING_WAIT_TIME_SECONDS, TimeUnit.SECONDS);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-			throw new RuntimeException("Multithread reading of log files has been interrupted");
 		}
         
 		return result;

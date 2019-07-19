@@ -38,10 +38,8 @@ public class LogFileParser {
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-			throw new RuntimeException("Log file not found");
 		} catch (IOException e) {
 			e.printStackTrace();
-			throw new RuntimeException("IOException occured");
 		}
 		return result;
 	}
