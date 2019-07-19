@@ -97,7 +97,7 @@ public class PropertiesReader implements ParametersGetterStrategy {
 		String resultString = prop.getProperty(NUMBER_OF_THREADS,"");
 		int result;
 		try {
-			result = Integer.valueOf(resultString);
+			result = Math.abs(Integer.valueOf(resultString));
 		} catch (NumberFormatException e) {
 			result = 1;
 		}
